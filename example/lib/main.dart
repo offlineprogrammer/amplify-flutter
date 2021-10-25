@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
 
     Amplify.addPlugins([auth, storage, analytics]);
 
-    // Initialize AmplifyFlutter
+    // Initialize AmplifyFlutter here
     try {
       await Amplify.configure(amplifyconfig);
     } on AmplifyAlreadyConfiguredException {
